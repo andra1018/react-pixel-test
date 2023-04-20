@@ -78,14 +78,14 @@ const Shop = () => {
 
   const viewType = { grid: "grid", card: "card" };
   const searchIconRef = useRef(null);
-  const [isOpenDetails, setIsOpenDetails] = useState(null);
+  const [isOpenDetails, setIsOpenDetails] = useState(false);
   const [pageNumber, setPageNumber] = useState(1);
   const [selectedView, setSelectedView] = useState({
     [`${viewType.grid}`]: true,
   });
   const [searchTxt, setSearchTxt] = useState("");
   const [isSearch, setIsSearch] = useState(false);
-  const [selectedDetails, setSelectedDetails] = useState(null);
+  const [selectedDetails, setSelectedDetails] = useState({});
 
   const handleViewType = (_type) => {
     setSelectedView({ [_type]: true });
@@ -119,28 +119,26 @@ const Shop = () => {
 
   const handleCloseDrawe = () => {
     setIsOpenDetails(false);
-    setSelectedDetails(null);
+    setSelectedDetails({});
   };
 
   return (
     <div className="shop-index">
-      {isOpenDetails && (
-        <Drawer
-          overlayColor={OVERLAY_COLOR}
-          overlayOpacity={0.85}
-          enableOverlay={true}
-          onClose={handleCloseDrawe}
-          open={isOpenDetails}
-          direction="right"
-          className={classNames("drawer-container", { extend: isOpenDetails })}
-        >
-          <DrawerContent
-            data={selectedDetails}
-            onClickClose={handleCloseDrawe}
-            headerData={tbHeader}
-          />
-        </Drawer>
-      )}
+      <Drawer
+        overlayColor={OVERLAY_COLOR}
+        overlayOpacity={0.85}
+        enableOverlay={true}
+        onClose={handleCloseDrawe}
+        open={isOpenDetails}
+        direction="right"
+        className="drawer-container"
+      >
+        <DrawerContent
+          data={selectedDetails}
+          onClickClose={handleCloseDrawe}
+          headerData={tbHeader}
+        />
+      </Drawer>
       <ShopHeader />
       <NavigationBar
         handleViewType={handleViewType}

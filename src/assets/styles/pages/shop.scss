@@ -110,7 +110,8 @@
             .lbl-value {
               display: flex;
               &.disable {
-                .select-box__single-value {
+                .select-box__single-value,
+                .select-box__placeholder {
                   color: var(--color-black-5);
                 }
               }

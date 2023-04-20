@@ -5,7 +5,7 @@ const DrawerContent = ({ data, onClickClose, headerData }) => {
   return (
     <div className="drawer-content">
       <div className="header">
-        <lablel className="lbl-header">{data.friendly}</lablel>
+        <label className="lbl-header">{data.friendly}</label>
         <IconClose onClick={onClickClose} />
       </div>
       <div className="details">
