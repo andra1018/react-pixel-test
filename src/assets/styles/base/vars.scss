@@ -1,0 +1,64 @@
+:root {
+  --color-primary: #307fc1;
+  --color-primary-light: #307fc112;
+  --color-primary-dark: #1f629a;
+  --color-secondary: #01ae8f;
+  --color-secondary-light: #01ae8f12;
+  --color-secondary-dark: #118e77;
+  --color-tertiary: #453fbb;
+  --color-tertiary-light: #453fbb12;
+  --color-tertiary-dark: #1e1989;
+  --color-quaternary: #ff3c00;
+  --color-quaternary-light: #ff3c0012;
+  --color-quaternary-dark: #bf2f03;
+  --color-success: #3eaa05;
+  --color-success-light: #3eaa0512;
+  --color-success-dark: #3c8416;
+  --color-error: #ff4d5f;
+  --color-error-light: #ff4d5f12;
+  --color-error-dark: #ba002c;
+  --color-warning: #ff7e00;
+  --color-warning-light: #ff7e0012;
+  --color-warning-dark: #b86d24;
+  --color-info: #265fb4;
+  --color-info-light: #265fb412;
+  --color-info-dark: #0f3d81;
+  --color-disabled: #d0d9e2;
+  --color-disabled-light: #d0d9e240;
+  --color-disabled-dark: #aeb8c3;
+
+  --color-gray-1: #919193;
+  --color-gray-2: #eef0f4;
+  --color-gray-3: #fbfbfd;
+  --color-gray-4: #b4b4b4;
+  --color-gray-5: #a7a7a9;
+  --color-gray-6: #aab0b4;
+  --color-gray-7: #9b9b9b;
+  --color-gray-light: #e8e8e8;
+
+  --color-black-1: #282828;
+  --color-black-2: #7d7c7c;
+  --color-black-3: #576870;
+  --color-black-4: #979797;
+  --color-black-5: #5d6870;
+
+  --border-color-1: #d8d8dd;
+  --border-color-2: #efeff1;
+  --border-color-3: #ebebed;
+  --tb-cell-color: #307fc108;
+
+  --color-primary-gradient: linear-gradient(107deg, #682a94, #05afe0);
+  --color-secondary-gradient: linear-gradient(107deg, #019cae, #307fc1);
+  --color-tertiary-gradient: linear-gradient(107deg, #01ae8f, #307fc1);
+  --color-select-bottom-gradient: linear-gradient(91deg, #01ae8f, #307fc1);
+
+  --font-family-rubik: "Rubik", sans-serif;
+
+  --box-shadow-1: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  --box-shadow-2: 0 5px 5px -2px rgba(1, 174, 143, 0.55);
+  --box-shadow-3: 0 4px 16px 0 rgba(0, 0, 0, 0.05);
+  --box-shadow-4: 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+  --box-shadow-5: 0 2px 16px 0 rgba(0, 0, 0, 0.11);
+  --box-shadow-6: 0 5px 5px -2px rgba(48, 127, 193, 0.55);
+  --max-width: 1360px;
+}
